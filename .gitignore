@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Generierte/Getestete Notebooks
+*_tested.ipynb
+*_fixed.ipynb
+*_fixed2.ipynb
+requirements_freeze.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Jupyter Runtime
+.jupyter/
+*.log
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporäre Dateien
+*.tmp
+*.bak
+
+# Claude Code
+.claude/
