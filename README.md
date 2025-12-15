@@ -124,22 +124,10 @@ venv/bin/jupyter lab --port=8889 --no-browser
 venv/bin/python test_notebook.py
 ```
 
-### Requirements aktualisieren
-
-```bash
-make freeze  # Erstellt requirements_freeze.txt mit exakten Versionen
-```
-
-### Backup erstellen
-
-```bash
-make backup  # Erstellt Backup mit Zeitstempel in archive/
-```
-
-## Lizenz
-
-Dieses Projekt dient Bildungszwecken.
 
 ## Kontakt
 
 Workshop-Material für Quantum Computing Einführung.
+
+Herr Prof. Dr. Sören Schlichting\
+https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=135644554
