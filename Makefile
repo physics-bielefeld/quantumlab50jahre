@@ -30,8 +30,8 @@ init:
 	$(PYTHON) -m venv $(VENV)
 	@echo "Aktualisiere pip..."
 	$(PIP) install --upgrade pip
-	@echo "Installiere Dependencies aus requirements.txt..."
-	$(PIP) install -r requirements.txt
+	@echo "Installiere Dependencies aus binder/requirements.txt..."
+	$(PIP) install -r binder/requirements.txt
 	@echo "Registriere Jupyter Kernel..."
 	$(VENV_BIN)/python -m ipykernel install --user --name=qiskit --display-name="Python (qiskit)"
 	@echo "Setup abgeschlossen!"

@@ -1,0 +1,6 @@
+#!/bin/bash
+# BinderHub post-build script
+# Wird nach der Installation der requirements.txt ausgeführt
+
+# Installiere Jupyter Kernel für Qiskit
+python -m ipykernel install --user --name=qiskit --display-name="Python (qiskit)"

@@ -10,12 +10,12 @@ Dieser Workshop führt in die Grundlagen des Quantum Computing ein:
 2. **Entanglement** - Verschränkte Quantenzustände
 3. **Quanten-Algorithmen** - Grover-Algorithmus und Quantenparallelismus
 
-## Voraussetzungen
+## Installation
+
+### Voraussetzungen
 
 - Python 3.8 oder höher
 - `make` (optional, aber empfohlen)
-
-## Schnellstart
 
 ### 1. Setup
 
@@ -28,7 +28,7 @@ Dies erstellt ein virtuelles Environment und installiert alle benötigten Depend
 ### 2. Jupyter Lab starten
 
 ```bash
-make jupyter
+make run
 ```
 
 Öffne dann im Browser: http://127.0.0.1:8888/
@@ -45,7 +45,7 @@ Falls `make` nicht verfügbar ist:
 # Setup
 python3 -m venv venv
 venv/bin/pip install --upgrade pip
-venv/bin/pip install -r requirements.txt
+venv/bin/pip install -r binder/requirements.txt
 venv/bin/python -m ipykernel install --user --name=qiskit --display-name="Python (qiskit)"
 
 # Jupyter starten
@@ -56,10 +56,9 @@ venv/bin/jupyter lab --ip=0.0.0.0 --no-browser
 
 ```bash
 make help          # Zeigt alle verfügbaren Befehle
-make init          # Komplettes Setup
-make jupyter       # Starte Jupyter Lab Server
-make run-notebook  # Führe Notebook automatisch aus
-make backup        # Erstelle Backup mit Zeitstempel
+make init          # Komplettes Setup (venv + Dependencies)
+make run           # Starte Jupyter Lab Server
+make run-notebook  # Führe Notebook auf der Kommandozeile aus
 make clean         # Lösche temporäre Dateien und Virtual Environment
 ```
 
@@ -73,14 +72,14 @@ Das Projekt verwendet:
 - **Matplotlib** - Visualisierungen
 - **Jupyter Lab** - Interaktive Notebook-Umgebung
 
-Siehe `requirements.txt` für Details.
+Siehe `binder/requirements.txt` für Details.
 
 
 ## Notebook ausführen
 
 **Interaktiv im Browser:**
 ```bash
-make jupyter
+make run
 ```
 
 **Automatisch von der Kommandozeile:**
@@ -124,10 +123,20 @@ venv/bin/jupyter lab --port=8889 --no-browser
 venv/bin/python test_notebook.py
 ```
 
+## Binder Konfiguration
+
+Dieses Repository ist für Binder/BinderHub vorbereitet. Die Konfigurationsdateien befinden sich im `binder/` Verzeichnis:
+
+- **binder/requirements.txt** - Python Dependencies für Binder
+- **binder/runtime.txt** - Python Version (3.11)
+- **binder/postBuild** - Post-Installation Setup (Jupyter Kernel Registration)
+
+Diese Dateien ermöglichen die automatische Ausführung des Notebooks auf einem BinderHub.
+
+## Lizenz
+
+Dieses Projekt dient Bildungszwecken.
 
 ## Kontakt
 
 Workshop-Material für Quantum Computing Einführung.
-
-Herr Prof. Dr. Sören Schlichting\
-https://ekvv.uni-bielefeld.de/pers_publ/publ/PersonDetail.jsp?personId=135644554
