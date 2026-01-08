@@ -10,6 +10,11 @@ Dieser Workshop führt in die Grundlagen des Quantum Computing ein:
 2. **Entanglement** - Verschränkte Quantenzustände
 3. **Quanten-Algorithmen** - Grover-Algorithmus und Quantenparallelismus
 
+## BinderHub
+
+Das Jupyter-Notebook kann auf dem BinderHub der Universität Münster direkt ausgeführt werden:
+https://binderhub.uni-muenster.de/v2/gh/physics-bielefeld/quantumlab50jahre.git/HEAD
+
 ## Installation
 
 ### Voraussetzungen
