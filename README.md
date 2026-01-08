@@ -10,12 +10,14 @@ Dieser Workshop führt in die Grundlagen des Quantum Computing ein:
 2. **Entanglement** - Verschränkte Quantenzustände
 3. **Quanten-Algorithmen** - Grover-Algorithmus und Quantenparallelismus
 
-## BinderHub
+## Ausführung auf BinderHub
 
-Das Jupyter-Notebook kann auf dem BinderHub der Universität Münster direkt ausgeführt werden:
+Das Jupyter-Notebook kann auf dem BinderHub der Universität Münster direkt ausgeführt werden: \
 https://binderhub.uni-muenster.de/v2/gh/physics-bielefeld/quantumlab50jahre.git/HEAD
 
-## Installation
+[![Binder](https://binderhub.uni-muenster.de/badge_logo.svg)](https://binderhub.uni-muenster.de/v2/gh/physics-bielefeld/quantumlab50jahre/HEAD)
+
+## Ausführung auf einem lokalem Rechner
 
 ### Voraussetzungen
 
@@ -128,7 +130,9 @@ venv/bin/jupyter lab --port=8889 --no-browser
 venv/bin/python test_notebook.py
 ```
 
-## Binder Konfiguration
+## BinderHub
+
+### Konfiguration
 
 Dieses Repository ist für Binder/BinderHub vorbereitet. Die Konfigurationsdateien befinden sich im `binder/` Verzeichnis:
 
@@ -138,10 +142,14 @@ Dieses Repository ist für Binder/BinderHub vorbereitet. Die Konfigurationsdatei
 
 Diese Dateien ermöglichen die automatische Ausführung des Notebooks auf einem BinderHub.
 
+### BinderHub Container generieren
+
+Auf der Hauptseite https://binderhub.uni-muenster.de kann unter Angabe der URL auf das GitHub-Repo eine neue Version des Containers erzeugt werden. 
+
 ## Lizenz
 
 Dieses Projekt dient Bildungszwecken.
 
 ## Kontakt
 
-Workshop-Material für Quantum Computing Einführung.
+Bei Verbesserungsvorschlägen oder Fehlern auf dieser Seite bitte an: info@physik.uni-bielefeld.de wenden.
