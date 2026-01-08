@@ -42,7 +42,7 @@ make run
 
 ### 3. Notebook öffnen
 
-Öffne `QuantumLab50Jahre.ipynb` im Jupyter Lab und arbeite interaktiv durch die Zellen.
+Öffne `QuantumLab.ipynb` im Jupyter Lab und arbeite interaktiv durch die Zellen.
 
 ## Verwendung ohne Make
 
@@ -65,7 +65,6 @@ venv/bin/jupyter lab --ip=0.0.0.0 --no-browser
 make help          # Zeigt alle verfügbaren Befehle
 make init          # Komplettes Setup (venv + Dependencies)
 make run           # Starte Jupyter Lab Server
-make run-notebook  # Führe Notebook auf der Kommandozeile aus
 make clean         # Lösche temporäre Dateien und Virtual Environment
 ```
 
@@ -88,13 +87,6 @@ Siehe `binder/requirements.txt` für Details.
 ```bash
 make run
 ```
-
-**Automatisch von der Kommandozeile:**
-```bash
-make run-notebook
-```
-
-Dies führt alle Zellen aus und speichert das Ergebnis in `QuantumLab50Jahre_tested.ipynb`.
 
 ## Troubleshooting
 
@@ -120,14 +112,6 @@ Jupyter auf anderem Port starten:
 
 ```bash
 venv/bin/jupyter lab --port=8889 --no-browser
-```
-
-## Entwicklung
-
-### Installation testen
-
-```bash
-venv/bin/python test_notebook.py
 ```
 
 ## BinderHub
